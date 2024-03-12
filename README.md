@@ -1,6 +1,17 @@
 <h1 align="center"> Olá, me chamo Guilherme ! </h1> 
 
-## Bem vindo(a) ao meu perfil GitHub 👋
+<h2 align="center">  Bem vindo(a) ao meu perfil GitHub 👋 </h2>
+
+<table align="center" border="0">
+  <tr>
+    <td align="left">
+      <img src="https://github.com/Gui-GitHub/Gui-GitHub/assets/146478427/951205a1-6adb-43b0-959b-219cb0d90ecd" width="300">
+    </td>
+    <td align="right">
+      <img src="https://media1.tenor.com/m/N--OnDx9xAQAAAAC/unigrid-decentralization.gif" width="300">
+    </td>
+  </tr>
+</table>
 
 ## Ferramentas e Tecnologias
 
