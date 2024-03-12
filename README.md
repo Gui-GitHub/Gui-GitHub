@@ -1,4 +1,5 @@
-# Olá, me chamo Guilherme ! 
+<h1 align="center"> Olá, me chamo Guilherme ! </h1> 
+
 ## Bem vindo(a) ao meu perfil GitHub 👋
 
 ## Ferramentas e Tecnologias
@@ -23,4 +24,3 @@
 <img loading="lazy" height="180em" src="https://github-readme-stats.vercel.app/api?username=Gui-GitHub&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
 </div>
 
-![Snake animation](https://github.com/Gui-GitHub/Gui-GitHub/blob/output/github-contribution-grid-snake.svg)
