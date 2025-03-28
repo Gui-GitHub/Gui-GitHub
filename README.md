@@ -46,6 +46,11 @@
 <br clear="both">
 
 ![Snake](https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/main/docs/snake.svg?color=6699ff&theme=dark&random=1)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/output/github-contribution-grid-snake.svg">
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/output/github-contribution-grid-snake.svg">
+</picture>
 
 ###
 
