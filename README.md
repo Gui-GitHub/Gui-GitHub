@@ -45,7 +45,7 @@
 
 <br clear="both">
 
-![Snake](https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/main/docs/snake.svg?color=6699ff&theme=dark)
+![Snake](https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/main/docs/snake.svg?color=6699ff&theme=dark&random=1)
 
 ###
 
