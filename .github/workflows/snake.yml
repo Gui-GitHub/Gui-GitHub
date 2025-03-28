@@ -3,7 +3,7 @@ name: Generate Snake Animation
 on:
   schedule:
     - cron: "0 0 * * *"  # Atualiza diariamente
-  workflow_dispatch:      # Permite executar manualmente
+  workflow_dispatch:      # Permite execução manual
 
 jobs:
   generate:
@@ -16,10 +16,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate Snake
-        uses: Platane/snk@v2
+        uses: Platane/snk@main  # 👈 Usando a versão MAIN (atualizada)
         with:
-          github_user_name: Gui-GitHub  # 👈 Nome de usuário **exato** (sem ${{ }} aqui)
-          outputs: docs/snake.svg      # Caminho do arquivo de saída
+          github_user_name: Gui-GitHub
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}  # 👈 Adicione esta linha!
+          outputs: docs/snake.svg
 
       - name: Commit and Push
         run: |
