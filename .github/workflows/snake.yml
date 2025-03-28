@@ -23,7 +23,7 @@ jobs:
         with:
           github_user_name: Gui-GitHub
           outputs: docs/snake.svg
-          args: "--color blue --background #0d1117"
+          args: "docs/snake.svg -c 6699ff -b 0d1117"
 
       - name: Commit and Push
         if: github.event_name == 'schedule' || github.event.inputs.force == 'true'
