@@ -45,7 +45,8 @@
 
 <br clear="both">
 
-![Snake animation](https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/output/github-contribution-grid-snake.gif)
+[![trophy](https://github-profile-trophy.vercel.app/?username=Gui-GitHub&theme=dracula)](https://github.com/ryo-ma/github-profile-trophy)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Gui-GitHub&theme=dracula)](https://git.io/streak-stats)
 
 ###
 
