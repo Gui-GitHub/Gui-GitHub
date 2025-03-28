@@ -15,21 +15,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Create docs directory
+        run: mkdir -p docs
+
       - name: Generate Snake
         uses: Platane/snk@main
         with:
           github_user_name: Gui-GitHub
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # 👈 Nome correto do parâmetro
           outputs: docs/snake.svg
-          args: "-c 6699ff -b 0d1117"  
+          args: "--color #6699ff --background #0d1117"
 
       - name: Commit and Push
-        if: github.event_name == 'schedule' || github.event.inputs.force == 'true'  # 👈 Evita loop
+        if: github.event_name == 'schedule' || github.event.inputs.force == 'true'
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Só faz commit se houver alterações
           git add docs/snake.svg
           if ! git diff --quiet; then
             git commit -m "Update snake animation"
