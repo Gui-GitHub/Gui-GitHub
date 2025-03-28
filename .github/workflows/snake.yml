@@ -2,8 +2,8 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Atualiza diariamente
-  workflow_dispatch:      # Permite execução manual
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
   generate:
@@ -16,16 +16,21 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate Snake
-        uses: Platane/snk@main  # 👈 Usando a versão MAIN (atualizada)
+        uses: Platane/snk@main
         with:
           github_user_name: Gui-GitHub
-          github_access_token: ${{ secrets.GITHUB_TOKEN }}  # 👈 Adicione esta linha!
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # 👈 Nome correto do parâmetro
           outputs: docs/snake.svg
 
       - name: Commit and Push
+        if: github.event_name == 'schedule' || github.event.inputs.force == 'true'  # 👈 Evita loop
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Só faz commit se houver alterações
           git add docs/snake.svg
-          git commit -m "Update snake animation"
-          git push
+          if ! git diff --quiet; then
+            git commit -m "Update snake animation"
+            git push
+          fi
