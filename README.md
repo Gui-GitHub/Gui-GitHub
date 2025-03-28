@@ -5,10 +5,10 @@
 <table align="center">
   <tr>
     <td align="left">
-      <img src="https://github.com/Gui-GitHub/Gui-GitHub/assets/146478427/951205a1-6adb-43b0-959b-219cb0d90ecd" width="300">
+      <img src="https://media1.tenor.com/m/N--OnDx9xAQAAAAC/unigrid-decentralization.gif" width="280">
     </td>
     <td align="right">
-      <img src="https://media1.tenor.com/m/N--OnDx9xAQAAAAC/unigrid-decentralization.gif" width="280">
+      <img src="https://github.com/Gui-GitHub/Gui-GitHub/assets/146478427/951205a1-6adb-43b0-959b-219cb0d90ecd" width="300">
     </td>
   </tr>
 </table>
