@@ -18,9 +18,7 @@ jobs:
       - name: Generate Snake
         uses: Platane/snk@main  # 👈 Usando a versão MAIN (atualizada)
         with:
-          github_user_name: Gui-GitHub
-          color: "6699ff"     # 👈 Cor da cobrinha (sem #)
-          theme: "dark" 
+          github_user_name: Gui-GitHub 
           github_access_token: ${{ secrets.GITHUB_TOKEN }}  # 👈 Adicione esta linha!
           outputs: docs/snake.svg
 
