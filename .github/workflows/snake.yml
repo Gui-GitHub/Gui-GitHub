@@ -18,8 +18,8 @@ jobs:
       - name: Generate Snake
         uses: Platane/snk@v2
         with:
-          github_user_name: Gui-GitHub  # 👈 Seu nome de usuário direto (ou use ${{ github.repository_owner }})
-          outputs: docs/snake.svg       # Salva o SVG na pasta "docs"
+          github_user_name: Gui-GitHub  # 👈 Nome de usuário **exato** (sem ${{ }} aqui)
+          outputs: docs/snake.svg      # Caminho do arquivo de saída
 
       - name: Commit and Push
         run: |
