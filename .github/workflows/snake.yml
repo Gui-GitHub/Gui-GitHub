@@ -21,6 +21,8 @@ jobs:
           github_user_name: Gui-GitHub
           github_token: ${{ secrets.GITHUB_TOKEN }}  # 👈 Nome correto do parâmetro
           outputs: docs/snake.svg
+          color: '6699ff'        
+          bg_color: '0d1117'     
 
       - name: Commit and Push
         if: github.event_name == 'schedule' || github.event.inputs.force == 'true'  # 👈 Evita loop
