@@ -43,6 +43,7 @@
 
 ###
 
+<!--
 <br clear="both">
 
 <img src="https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/output/snake.svg" alt="Snake animation" />
