@@ -1,0 +1,44 @@
+name: Snake Game
+
+on:
+  schedule:
+    - cron: "0 */5 * * *"  # Atualiza a cada 5 horas
+  workflow_dispatch:       # Permite disparo manual do workflow
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Faz checkout do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # 2. Gera a animação da snake (GIF e SVG)
+      - name: Generate Snake Animation
+        uses: Platane/snk@master  # Você pode fixar uma versão estável, se preferir
+        id: snake
+        with:
+          github_user_name: Gui-GitHub  # Substitua pelo seu usuário exatamente como no GitHub
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
+
+      # 3. Exibe o status do git (opcional, para debug)
+      - name: Show Git status
+        run: git status
+
+      # 4. Realiza o push das mudanças no branch master
+      - name: Push changes to master
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+          force: true
+
+      # 5. Publica a pasta 'dist' (com os arquivos gerados) no branch 'output'
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.1.3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
