@@ -45,8 +45,7 @@
 
 <br clear="both">
 
-![Snake Animation](https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/main/docs/snake.svg)
-[![trophy](https://github-profile-trophy.vercel.app/?username=Gui-GitHub&theme=dracula)](https://github.com/ryo-ma/github-profile-trophy)
+![Snake](https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/main/docs/snake.svg?color=6699ff&theme=dark)
 
 ###
 
