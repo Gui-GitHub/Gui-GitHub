@@ -15,15 +15,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create docs directory
-        run: mkdir -p docs
-
       - name: Generate Snake
-        uses: Platane/snk@main
+        uses: Platane/snk@v3.0.0
         with:
           github_user_name: Gui-GitHub
           outputs: docs/snake.svg
-          args: "docs/snake.svg --without-comments --color 6699ff --background 0d1117"
+          args: "--output docs/snake.svg --color-user 6699ff --color-bg 0d1117 --force-user-color --force-bg-color"
 
       - name: Commit and Push
         if: github.event_name == 'schedule' || github.event.inputs.force == 'true'
