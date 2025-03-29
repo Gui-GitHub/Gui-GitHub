@@ -29,7 +29,7 @@ jobs:
 
       - name: generate-snake-game-from-github-contribution-grid
         id: generate-snake
-        uses: Gui-GitHub/Gui-GitHub
+        uses: Gui-GitHub/Gui-GitHub@main
         with:
           github_user_name: platane
           outputs: |
@@ -67,7 +67,7 @@ jobs:
 
       - name: generate-snake-game-from-github-contribution-grid
         id: generate-snake
-        uses: Gui-GitHub/Gui-GitHub/svg-only
+        uses: Gui-GitHub/Gui-GitHub@main/svg-only
         with:
           github_user_name: platane
           outputs: |
