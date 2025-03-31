@@ -1,8 +1,6 @@
 name: Generate Snake Animation
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,28 +15,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Create docs folder
+      - name: Criar pasta docs
         run: mkdir -p docs
 
-      - name: Generate Snake
+      - name: Gerar Snake
         uses: Platane/snk@master
         with:
           github_user_name: Gui-GitHub
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          outputs: |
-            docs/snake.svg
-            docs/snake-dark.svg?palette=github-dark
-          svg_relative_to: docs  # 👈 Fixa o posicionamento
+          outputs: docs/snake.svg?palette=github-dark  # 🎯 TEMA ESCURO DIRETO
 
-      - name: Commit and Push
+      - name: Fazer Commit
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           git add docs/snake.svg
-          git add docs/snake-dark.svg
           
-          if ! git diff --quiet; then
+          if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Update snake animation"
             git push
           fi
