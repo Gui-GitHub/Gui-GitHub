@@ -15,29 +15,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 🔄 Importante para histórico completo
+          fetch-depth: 0
 
-      - name: Create docs directory
-        run: mkdir -p docs  # ✅ Garante que a pasta existe
+      - name: Create docs folder
+        run: mkdir -p docs
 
       - name: Generate Snake
-        uses: Platane/snk@main
+        uses: Platane/snk@master
         with:
           github_user_name: Gui-GitHub
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          outputs: docs/snake.svg
-          color_border: '#1a1a1a'
-          color_pipe: '#1a1a1a'
-          color_dot: '#3cba54'
+          outputs: |
+            docs/snake.svg
+            docs/snake-dark.svg?palette=github-dark
+          svg_relative_to: docs  # 👈 Fixa o posicionamento
 
       - name: Commit and Push
-        if: github.event_name == 'schedule' || github.event.inputs.force == 'true'
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Força a adição do arquivo mesmo se ignorado no .gitignore
-          git add -f docs/snake.svg
+          git add docs/snake.svg
+          git add docs/snake-dark.svg
           
-          # Commit condicional
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update snake animation" && git push)
+          if ! git diff --quiet; then
+            git commit -m "Update snake animation"
+            git push
+          fi
