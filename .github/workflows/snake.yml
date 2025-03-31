@@ -2,8 +2,8 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *"  # Executa diariamente à meia-noite UTC
+  workflow_dispatch:  # Permite execução manual
 
 jobs:
   generate:
@@ -15,22 +15,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate Snake
+      - name: Generate Snake (Dark Theme)
         uses: Platane/snk@main
         with:
           github_user_name: Gui-GitHub
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # 👈 Nome correto do parâmetro
-          outputs: docs/snake.svg
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: docs/snake-dark.svg?palette=github-dark  # 👈 Tema escuro
 
       - name: Commit and Push
-        if: github.event_name == 'schedule' || github.event.inputs.force == 'true'  # 👈 Evita loop
+        if: github.event_name == 'schedule' || github.event.inputs.force == 'true'
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           # Só faz commit se houver alterações
-          git add docs/snake.svg
+          git add docs/snake-dark.svg
           if ! git diff --quiet; then
-            git commit -m "Update snake animation"
+            git commit -m "Update dark theme snake animation"
             git push
           fi
