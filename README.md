@@ -1,4 +1,4 @@
-<h2 align="left">Olá 👋! Meu nome é Guilherme, sou Desenvolvedor back-End</h2>
+<h1 align="center">Olá 👋! Meu nome é Guilherme, sou Desenvolvedor back-End</h2>
 
 ###
 
@@ -13,7 +13,7 @@
 <img align="right" height="150" src="https://media1.tenor.com/m/N--OnDx9xAQAAAAC/unigrid-decentralization.gif"  />
 
 ###
-
+### 💻 Tech Stack:
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
   <img width="12" />
@@ -41,7 +41,7 @@
   </a>
 </div>
 
-###
+##
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gui-GitHub/Gui-GitHub/output/github-snake-dark.svg" />
