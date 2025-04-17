@@ -15,7 +15,7 @@
 ###
 ### 💻 Tech Stack:
 <div align="left">
-  <a href="LINK_DO_SEU_REPO_PYTHON" target="_blank">
+  <a href="https://github.com/Gui-GitHub/curso_python_praticando" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"/>
   </a>
   <img width="12" />
