@@ -28,7 +28,7 @@
   </a>
   <img width="12" />
   <a href="https://github.com/Gui-GitHub/meus-links" target="_blank">
-     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo" />
+     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"/>
   </a>
   <img width="12" />
    <a href="https://github.com/Gui-GitHub/boasPraticasTestes" target="_blank">
@@ -36,7 +36,7 @@
   </a>
   <img width="12" />
   <a href="https://github.com/Gui-GitHub/boasPraticasAPI" target="_blank"> 
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="30" alt="spring logo"  />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="30" alt="spring logo"/>
   </a>
   <img width="12" />
 </div>
