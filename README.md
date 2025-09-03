@@ -3,10 +3,28 @@
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Gui-GitHub&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Gui-GitHub&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"/>
-</div>
 
+  <picture>
+    <source 
+      srcset="https://github-readme-stats.vercel.app/api?username=Gui-GitHub&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" 
+      media="(prefers-color-scheme: dark)" />
+    <source 
+      srcset="https://github-readme-stats.vercel.app/api?username=Gui-GitHub&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=default&locale=en&hide_border=false" 
+      media="(prefers-color-scheme: light)" />
+    <img height="150" alt="stats graph" src="https://github-readme-stats.vercel.app/api?username=Gui-GitHub&theme=default" />
+  </picture>
+
+  <picture>
+    <source 
+      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=Gui-GitHub&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" 
+      media="(prefers-color-scheme: dark)" />
+    <source 
+      srcset="https://github-readme-stats.vercel.app/api/top-langs?username=Gui-GitHub&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=false" 
+      media="(prefers-color-scheme: light)" />
+    <img height="150" alt="languages graph" src="https://github-readme-stats.vercel.app/api/top-langs?username=Gui-GitHub&layout=compact&card_width=320&langs_count=5&theme=default" />
+  </picture>
+
+</div>
 
 ###
 
@@ -63,5 +81,3 @@
 
 
 ###
-
-
