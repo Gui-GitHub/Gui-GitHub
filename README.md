@@ -37,24 +37,40 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"/>
   </a>
   <img width="12" />
+
   <a href="https://github.com/Gui-GitHub/FinanceiroDjango" target="_blank"> 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="30" alt="django logo" />
   </a>
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"  height="30" alt="pandas logo" />
+
+  <a href="https://github.com/pallets/flask" target="_blank" aria-label="Flask">
+    <picture>
+      <source srcset="https://cdn.simpleicons.org/flask/ffffff" media="(prefers-color-scheme: dark)" />
+      <source srcset="https://cdn.simpleicons.org/flask/000000" media="(prefers-color-scheme: light)" />
+      <img src="https://cdn.simpleicons.org/flask/000000" height="30" alt="Flask logo" />
+    </picture>
+  </a>
+
   <img width="12" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" height="30" alt="FastApi logo" />
+  <img width="12" />
+
   <a href="https://github.com/Gui-GitHub/portifolio-projeto" target="_blank">
      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo" />
   </a>
   <img width="12" />
+
   <a href="https://github.com/Gui-GitHub/meus-links" target="_blank">
      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"/>
   </a>
   <img width="12" />
+
    <a href="https://github.com/Gui-GitHub/boasPraticasTestes" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo"/>
   </a>
   <img width="12" />
+
   <a href="https://github.com/Gui-GitHub/boasPraticasAPI" target="_blank"> 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="30" alt="spring logo"/>
   </a>
